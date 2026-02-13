@@ -1,0 +1,47 @@
+import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700", "800", "900"],
+});
+
+export const metadata: Metadata = {
+  title: "RoofPlanet — Professional Roofing & Restoration | Houston, TX",
+  description:
+    "Expert roofing, siding, windows, and gutters in Houston, TX. Free estimates and insurance claim assistance. 15+ years of quality work.",
+  keywords: "roofing, Houston, roof repair, roof replacement, storm damage, insurance claims, siding, gutters, windows",
+  openGraph: {
+    title: "RoofPlanet — Professional Roofing & Restoration",
+    description: "Houston's trusted roofing experts since 2009. Free estimates, insurance claim assistance, and 24/7 emergency response.",
+    type: "website",
+    url: "https://www.theroofplanet.com",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased bg-white text-roof-charcoal`}>
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
+}
