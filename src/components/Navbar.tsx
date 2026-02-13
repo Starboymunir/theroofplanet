@@ -203,6 +203,19 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
             />
 
+            {/* Close Button */}
+            <motion.button
+              className="absolute top-[calc(2.25rem+1.125rem)] right-4 sm:right-6 z-10 w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 transition-all"
+              onClick={() => setIsOpen(false)}
+              aria-label="Close menu"
+              initial={{ opacity: 0, rotate: -90 }}
+              animate={{ opacity: 1, rotate: 0 }}
+              exit={{ opacity: 0, rotate: 90 }}
+              transition={{ duration: 0.2 }}
+            >
+              <X className="w-5 h-5 text-white" />
+            </motion.button>
+
             {/* Menu Content */}
             <motion.div
               className="relative flex flex-col justify-center items-center h-full px-8"
