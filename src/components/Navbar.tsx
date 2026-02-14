@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'framer-motion';
 import { Menu, X, Phone, ArrowRight } from 'lucide-react';
 
@@ -62,7 +63,7 @@ export default function Navbar() {
           <div className="flex items-center gap-5">
             <a
               href="tel:+18323706314"
-              className="flex items-center gap-1.5 text-[#ecc94b] hover:text-white transition-colors font-semibold"
+              className="flex items-center gap-1.5 text-[#a78bfa] hover:text-white transition-colors font-semibold"
             >
               <Phone className="w-3 h-3" />
               (832) 370-6314
@@ -70,7 +71,7 @@ export default function Navbar() {
             <span className="hidden sm:inline text-gray-400">|</span>
             <a
               href="mailto:info@theroofplanet.com"
-              className="hidden sm:inline text-gray-300 hover:text-[#ecc94b] transition-colors"
+              className="hidden sm:inline text-gray-300 hover:text-[#a78bfa] transition-colors"
             >
               info@theroofplanet.com
             </a>
@@ -78,7 +79,7 @@ export default function Navbar() {
           <div className="hidden sm:flex items-center gap-4 text-gray-400">
             <span>Houston, TX</span>
             <span>|</span>
-            <span className="text-[#ecc94b]/80">Licensed &amp; Insured</span>
+            <span className="text-[#a78bfa]/80">Licensed &amp; Insured</span>
           </div>
         </div>
       </div>
@@ -94,24 +95,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-[72px]">
             {/* ── Logo ── */}
-            <Link href="/" className="relative group flex items-center gap-3" onClick={() => setIsOpen(false)}>
-              {/* Logo icon — rotated diamond with roof silhouette */}
-              <div className="relative w-11 h-11 flex items-center justify-center shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#ecc94b] to-[#b7791f] rounded-xl rotate-45 group-hover:rotate-[50deg] transition-transform duration-500 shadow-lg shadow-[#d69e2e]/20" />
-                <svg viewBox="0 0 24 24" fill="none" className="relative w-6 h-6 z-10">
-                  <path d="M3 12L12 4L21 12" stroke="#0a1628" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M6 10.5V19C6 19.5 6.5 20 7 20H17C17.5 20 18 19.5 18 19V10.5" stroke="#0a1628" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </div>
-              {/* Logo text */}
-              <div className="flex flex-col leading-none">
-                <span className="text-[22px] font-extrabold text-white tracking-tight" style={{fontFamily: 'var(--font-playfair)'}}>
-                  Roof<span className="text-[#d69e2e] group-hover:text-[#ecc94b] transition-colors">Planet</span>
-                </span>
-                <span className="text-[9px] font-bold tracking-[0.35em] text-white/30 uppercase mt-1">
-                  ROOFING EXCELLENCE
-                </span>
-              </div>
+            <Link href="/" className="relative group flex items-center" onClick={() => setIsOpen(false)}>
+              <Image
+                src="/roofplanet-full_horizontal_logo-pixel.webp"
+                alt="RoofPlanet"
+                width={180}
+                height={50}
+                className="h-10 w-auto object-contain brightness-0 invert group-hover:opacity-90 transition-opacity"
+                priority
+              />
             </Link>
 
             {/* ── Desktop Nav Links ── */}
@@ -124,7 +116,7 @@ export default function Navbar() {
                 >
                   {link.label}
                   {/* Animated gold underline */}
-                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-[#d69e2e] to-[#ecc94b] group-hover:w-3/4 transition-all duration-300 ease-out rounded-full" />
+                  <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] group-hover:w-3/4 transition-all duration-300 ease-out rounded-full" />
                 </Link>
               ))}
             </div>
@@ -134,7 +126,7 @@ export default function Navbar() {
               {/* Phone CTA — desktop only */}
               <a
                 href="tel:+18323706314"
-                className="hidden lg:flex items-center gap-1.5 text-[#ecc94b] hover:text-white text-sm font-semibold transition-colors mr-1"
+                className="hidden lg:flex items-center gap-1.5 text-[#a78bfa] hover:text-white text-sm font-semibold transition-colors mr-1"
               >
                 <Phone className="w-4 h-4" />
                 <span className="hidden xl:inline">(832) 370-6314</span>
@@ -143,7 +135,7 @@ export default function Navbar() {
               {/* Get Free Quote CTA */}
               <Link
                 href="/contact"
-                className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-[#d69e2e] to-[#ecc94b] hover:from-[#ecc94b] hover:to-[#d69e2e] text-roof-dark font-bold text-sm py-2.5 px-6 rounded-full shadow-lg shadow-[#d69e2e]/25 hover:shadow-[#d69e2e]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+                className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold text-sm py-2.5 px-6 rounded-full shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
               >
                 Get Free Quote
                 <ArrowRight className="w-4 h-4" />
@@ -230,7 +222,7 @@ export default function Navbar() {
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className="block text-center text-3xl sm:text-4xl font-bold text-white/90 hover:text-[#ecc94b] py-4 transition-colors"
+                    className="block text-center text-3xl sm:text-4xl font-bold text-white/90 hover:text-[#a78bfa] py-4 transition-colors"
                   >
                     {link.label}
                     {i < navLinks.length - 1 && (
@@ -245,14 +237,14 @@ export default function Navbar() {
                 <Link
                   href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#d69e2e] to-[#ecc94b] text-roof-dark font-bold text-lg py-4 rounded-full shadow-lg shadow-[#d69e2e]/30"
+                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] text-roof-dark font-bold text-lg py-4 rounded-full shadow-lg shadow-[#7c3aed]/30"
                 >
                   Get Free Quote
                   <ArrowRight className="w-5 h-5" />
                 </Link>
                 <a
                   href="tel:+18323706314"
-                  className="flex items-center justify-center gap-2 w-full border-2 border-[#d69e2e]/50 text-[#ecc94b] hover:bg-[#d69e2e]/10 font-semibold text-lg py-4 rounded-full transition-colors"
+                  className="flex items-center justify-center gap-2 w-full border-2 border-[#7c3aed]/50 text-[#a78bfa] hover:bg-[#7c3aed]/10 font-semibold text-lg py-4 rounded-full transition-colors"
                 >
                   <Phone className="w-5 h-5" />
                   (832) 370-6314

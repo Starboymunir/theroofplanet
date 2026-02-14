@@ -222,8 +222,8 @@ function StatCard({ stat, index }: { stat: (typeof statsData)[0]; index: number 
       transition={{ duration: 0.6, delay: index * 0.15 }}
       className="text-center group"
     >
-      <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#d69e2e]/10 border border-[#d69e2e]/20 mb-4 group-hover:bg-[#d69e2e]/20 group-hover:border-[#d69e2e]/30 transition-all duration-300">
-        <Icon className="w-6 h-6 text-[#d69e2e]" />
+      <div className="inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-[#7c3aed]/10 border border-[#7c3aed]/20 mb-4 group-hover:bg-[#7c3aed]/20 group-hover:border-[#7c3aed]/30 transition-all duration-300">
+        <Icon className="w-6 h-6 text-[#7c3aed]" />
       </div>
       <div className="counter-number">
         {count.toLocaleString()}
@@ -329,10 +329,10 @@ export default function HomePage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="inline-flex items-center gap-2 bg-[#d69e2e]/20 border border-[#d69e2e]/30 backdrop-blur-sm rounded-full px-5 py-2 mb-6"
+                  className="inline-flex items-center gap-2 bg-[#7c3aed]/20 border border-[#7c3aed]/30 backdrop-blur-sm rounded-full px-5 py-2 mb-6"
                 >
-                  <Star className="w-4 h-4 fill-[#ecc94b] text-[#ecc94b]" />
-                  <span className="text-[#ecc94b] text-sm font-semibold tracking-wide">
+                  <Star className="w-4 h-4 fill-[#a78bfa] text-[#a78bfa]" />
+                  <span className="text-[#a78bfa] text-sm font-semibold tracking-wide">
                     {heroSlides[currentSlide].badge}
                   </span>
                 </motion.div>
@@ -349,7 +349,7 @@ export default function HomePage() {
                   className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[0.95] mb-6 text-white"
                 >
                   {heroSlides[currentSlide].title}{' '}
-                  <span className="bg-gradient-to-r from-[#d69e2e] via-[#ecc94b] to-[#d69e2e] bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-[#7c3aed] via-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
                     {heroSlides[currentSlide].highlight}
                   </span>
                 </motion.h1>
@@ -364,7 +364,7 @@ export default function HomePage() {
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: -40, opacity: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-lg sm:text-xl text-[#ecc94b]/80 font-medium tracking-widest uppercase"
+                    className="text-lg sm:text-xl text-[#a78bfa]/80 font-medium tracking-widest uppercase"
                   >
                     Delivering {rotatingWords[wordIndex]} Since 2009
                   </motion.div>
@@ -394,14 +394,14 @@ export default function HomePage() {
               >
                 <Link
                   href="/contact"
-                  className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#d69e2e] to-[#ecc94b] hover:from-[#ecc94b] hover:to-[#d69e2e] text-roof-dark font-bold px-8 py-4 rounded-full text-lg shadow-2xl shadow-[#d69e2e]/30 hover:shadow-[#d69e2e]/50 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+                  className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold px-8 py-4 rounded-full text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
                 >
                   Get Free Estimate
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
                   href="tel:+18323706314"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#d69e2e]/60 text-white hover:text-[#ecc94b] font-bold px-8 py-4 rounded-full text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white hover:text-[#a78bfa] font-bold px-8 py-4 rounded-full text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
                 >
                   <Phone className="w-5 h-5" />
                   (832) 370-6314
@@ -433,7 +433,7 @@ export default function HomePage() {
             </div>
             <div className="mt-4 w-48 h-[2px] bg-white/10 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-[#d69e2e] to-[#ecc94b]"
+                className="h-full bg-gradient-to-r from-[#7c3aed] to-[#a78bfa]"
                 style={{ width: `${slideProgress}%` }}
               />
             </div>
@@ -448,7 +448,7 @@ export default function HomePage() {
         >
           <div className="w-6 h-10 border-2 border-white/20 rounded-full flex justify-center">
             <motion.div
-              className="w-1.5 h-3 bg-[#d69e2e] rounded-full mt-2"
+              className="w-1.5 h-3 bg-[#7c3aed] rounded-full mt-2"
               animate={{ opacity: [1, 0.3, 1], y: [0, 8, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
             />
@@ -460,8 +460,8 @@ export default function HomePage() {
           COUNTING STATS
           ════════════════════════════════════════ */}
       <section className="relative bg-[#0a1628] py-16 sm:py-20 overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#d69e2e]/5 rounded-full blur-[120px]" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#d69e2e]/3 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#7c3aed]/5 rounded-full blur-[120px]" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#7c3aed]/3 rounded-full blur-[100px]" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
@@ -492,12 +492,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block text-[#d69e2e] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
+            <span className="inline-block text-[#7c3aed] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
               What We Do
             </span>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0a1628] mb-4">
               Our{' '}
-              <span className="bg-gradient-to-r from-[#d69e2e] to-[#b7791f] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#7c3aed] to-[#5b21b6] bg-clip-text text-transparent">
                 Services
               </span>
             </h2>
@@ -531,16 +531,16 @@ export default function HomePage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/60 to-transparent" />
                     <div className="absolute inset-0 flex flex-col justify-end p-8">
-                      <div className="mb-4 w-12 h-12 rounded-xl bg-[#d69e2e]/20 backdrop-blur-sm border border-[#d69e2e]/30 flex items-center justify-center group-hover:bg-[#d69e2e] group-hover:border-[#d69e2e] transition-all duration-300">
-                        <Icon className="w-6 h-6 text-[#ecc94b] group-hover:text-roof-dark transition-colors duration-300" />
+                      <div className="mb-4 w-12 h-12 rounded-xl bg-[#7c3aed]/20 backdrop-blur-sm border border-[#7c3aed]/30 flex items-center justify-center group-hover:bg-[#7c3aed] group-hover:border-[#7c3aed] transition-all duration-300">
+                        <Icon className="w-6 h-6 text-[#a78bfa] group-hover:text-roof-dark transition-colors duration-300" />
                       </div>
-                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#ecc94b] transition-colors duration-300">
+                      <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#a78bfa] transition-colors duration-300">
                         {service.title}
                       </h3>
                       <p className="text-white/60 text-sm leading-relaxed max-w-md">
                         {service.desc}
                       </p>
-                      <div className="flex items-center gap-2 mt-4 text-[#ecc94b] text-sm font-semibold opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
+                      <div className="flex items-center gap-2 mt-4 text-[#a78bfa] text-sm font-semibold opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300">
                         Learn More
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </div>
@@ -560,7 +560,7 @@ export default function HomePage() {
           >
             <Link
               href="/services"
-              className="inline-flex items-center gap-2 text-[#d69e2e] hover:text-[#b7791f] font-bold text-lg transition-colors group"
+              className="inline-flex items-center gap-2 text-[#7c3aed] hover:text-[#5b21b6] font-bold text-lg transition-colors group"
             >
               View All Services
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -597,7 +597,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="absolute -bottom-6 -right-4 sm:right-8 bg-gradient-to-br from-[#d69e2e] to-[#b7791f] text-white p-6 rounded-2xl shadow-xl"
+                className="absolute -bottom-6 -right-4 sm:right-8 bg-gradient-to-br from-[#7c3aed] to-[#5b21b6] text-white p-6 rounded-2xl shadow-xl"
               >
                 <div className="text-4xl font-extrabold leading-none">15+</div>
                 <div className="text-sm font-medium mt-1 opacity-90">
@@ -613,12 +613,12 @@ export default function HomePage() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="inline-block text-[#d69e2e] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
+              <span className="inline-block text-[#7c3aed] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
                 Why Choose Us
               </span>
               <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0a1628] mb-6 leading-tight">
                 Houston&apos;s Most{' '}
-                <span className="bg-gradient-to-r from-[#d69e2e] to-[#b7791f] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[#7c3aed] to-[#5b21b6] bg-clip-text text-transparent">
                   Trusted
                 </span>{' '}
                 Roofers
@@ -638,7 +638,7 @@ export default function HomePage() {
                     transition={{ duration: 0.4, delay: i * 0.08 }}
                     className="flex items-start gap-3"
                   >
-                    <CheckCircle2 className="w-5 h-5 text-[#d69e2e] mt-0.5 shrink-0" />
+                    <CheckCircle2 className="w-5 h-5 text-[#7c3aed] mt-0.5 shrink-0" />
                     <div>
                       <h4 className="font-bold text-[#0a1628] text-sm">{feature.title}</h4>
                       <p className="text-gray-500 text-xs mt-0.5">{feature.desc}</p>
@@ -663,7 +663,7 @@ export default function HomePage() {
           TESTIMONIALS CAROUSEL
           ════════════════════════════════════════ */}
       <section className="relative bg-[#0a1628] py-24 sm:py-32 overflow-hidden">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d69e2e]/5 rounded-full blur-[150px]" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#7c3aed]/5 rounded-full blur-[150px]" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -673,12 +673,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block text-[#d69e2e] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
+            <span className="inline-block text-[#7c3aed] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
               Testimonials
             </span>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-4">
               What Our{' '}
-              <span className="bg-gradient-to-r from-[#d69e2e] via-[#ecc94b] to-[#d69e2e] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#7c3aed] via-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
                 Clients Say
               </span>
             </h2>
@@ -696,7 +696,7 @@ export default function HomePage() {
               >
                 <div className="flex items-center gap-1 mb-6">
                   {[...Array(testimonials[currentTestimonial].rating)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-[#ecc94b] text-[#ecc94b]" />
+                    <Star key={i} className="w-5 h-5 fill-[#a78bfa] text-[#a78bfa]" />
                   ))}
                 </div>
 
@@ -705,14 +705,14 @@ export default function HomePage() {
                 </blockquote>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#d69e2e] to-[#b7791f] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#d69e2e]/20">
+                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-[#7c3aed] to-[#5b21b6] flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-[#7c3aed]/20">
                     {testimonials[currentTestimonial].initials}
                   </div>
                   <div>
                     <div className="text-white font-bold text-lg">
                       {testimonials[currentTestimonial].name}
                     </div>
-                    <div className="text-[#d69e2e] text-sm">
+                    <div className="text-[#7c3aed] text-sm">
                       {testimonials[currentTestimonial].role}
                     </div>
                   </div>
@@ -767,12 +767,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <span className="inline-block text-[#d69e2e] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
+            <span className="inline-block text-[#7c3aed] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
               Our Work
             </span>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#0a1628] mb-4">
               Recent{' '}
-              <span className="bg-gradient-to-r from-[#d69e2e] to-[#b7791f] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#7c3aed] to-[#5b21b6] bg-clip-text text-transparent">
                 Projects
               </span>
             </h2>
@@ -820,12 +820,12 @@ export default function HomePage() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <span className="inline-block text-[#d69e2e] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
+            <span className="inline-block text-[#7c3aed] font-semibold text-sm tracking-[0.2em] uppercase mb-3">
               Coverage Area
             </span>
             <h2 className="text-4xl sm:text-5xl font-extrabold text-[#0a1628] mb-4">
               Proudly Serving{' '}
-              <span className="bg-gradient-to-r from-[#d69e2e] to-[#b7791f] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#7c3aed] to-[#5b21b6] bg-clip-text text-transparent">
                 Greater Houston
               </span>
             </h2>
@@ -839,7 +839,7 @@ export default function HomePage() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: i * 0.05 }}
-                className="px-6 py-3 bg-white hover:bg-gradient-to-r hover:from-[#d69e2e] hover:to-[#ecc94b] border border-[#0a1628]/10 hover:border-transparent rounded-full text-[#0a1628] hover:text-white font-medium transition-all duration-300 cursor-default shadow-sm"
+                className="px-6 py-3 bg-white hover:bg-gradient-to-r hover:from-[#7c3aed] hover:to-[#a78bfa] border border-[#0a1628]/10 hover:border-transparent rounded-full text-[#0a1628] hover:text-white font-medium transition-all duration-300 cursor-default shadow-sm"
               >
                 {area}
               </motion.span>
@@ -870,12 +870,12 @@ export default function HomePage() {
           >
             <div className="flex items-center justify-center gap-1.5 mb-6">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-[#ecc94b] text-[#ecc94b]" />
+                <Star key={i} className="w-6 h-6 fill-[#a78bfa] text-[#a78bfa]" />
               ))}
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
               Ready to Start Your{' '}
-              <span className="bg-gradient-to-r from-[#d69e2e] via-[#ecc94b] to-[#d69e2e] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#7c3aed] via-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
                 Roofing Project?
               </span>
             </h2>
@@ -886,14 +886,14 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#d69e2e] to-[#ecc94b] hover:from-[#ecc94b] hover:to-[#d69e2e] text-roof-dark font-bold px-10 py-5 rounded-full text-lg shadow-2xl shadow-[#d69e2e]/30 hover:shadow-[#d69e2e]/50 transition-all duration-300 hover:scale-[1.03]"
+                className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold px-10 py-5 rounded-full text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03]"
               >
                 Get Free Estimate
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
                 href="tel:+18323706314"
-                className="inline-flex items-center gap-2 border-2 border-white/20 hover:border-[#d69e2e]/60 text-white font-bold px-10 py-5 rounded-full text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
+                className="inline-flex items-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white font-bold px-10 py-5 rounded-full text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
               >
                 <Phone className="w-5 h-5" />
                 Call Now
