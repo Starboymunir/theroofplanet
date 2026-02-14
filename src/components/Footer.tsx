@@ -83,7 +83,7 @@ export default function Footer() {
                 alt="RoofPlanet"
                 width={160}
                 height={45}
-                className="h-9 w-auto object-contain brightness-0 invert group-hover:opacity-90 transition-opacity"
+                className="h-9 w-auto object-contain group-hover:opacity-90 transition-opacity"
               />
             </Link>
             <p className="text-gray-400 leading-relaxed mb-6">
