@@ -183,7 +183,7 @@ export default function AboutPage() {
 
       {/* ─────────── 2. MISSION / ABOUT ─────────── */}
       <Section className="py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             {/* left: image with decorative gold border accent */}
             <motion.div
@@ -265,7 +265,7 @@ export default function AboutPage() {
       {/* ─────────── 3. OUR VALUES ─────────── */}
       <Section className="py-20 md:py-28 bg-roof-dark relative overflow-hidden">
         <div className="pattern-dots" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* heading */}
           <div className="text-center mb-14">
             <span className="text-roof-amber font-bold text-sm uppercase tracking-widest">
