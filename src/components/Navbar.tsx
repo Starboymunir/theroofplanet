@@ -59,7 +59,7 @@ export default function Navbar() {
     <>
       {/* ── Slim Top Accent Bar ── */}
       <div className="fixed top-0 left-0 right-0 z-[60] bg-roof-dark/95 backdrop-blur-sm border-b border-white/5">
-        <div className="max-w-7xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8 h-9 text-xs tracking-wide">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto flex justify-between items-center h-9 text-xs tracking-wide">
           <div className="flex items-center gap-5">
             <a
               href="tel:+18323706314"
@@ -92,7 +92,7 @@ export default function Navbar() {
             : 'bg-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <div className="flex justify-between items-center h-[72px]">
             {/* ── Logo ── */}
             <Link href="/" className="relative group flex items-center" onClick={() => setIsOpen(false)}>

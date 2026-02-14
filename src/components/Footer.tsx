@@ -33,7 +33,7 @@ export default function Footer() {
 
       {/* ── CTA Banner ── */}
       <div className="relative">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 text-center">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto py-16 sm:py-20 text-center">
           {/* Decorative stars */}
           <div className="flex items-center justify-center gap-1.5 mb-6">
             {[...Array(5)].map((_, i) => (
@@ -73,7 +73,7 @@ export default function Footer() {
       </div>
 
       {/* ── Main Footer Grid ── */}
-      <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="relative w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           {/* Column 1 — Brand */}
           <div>
@@ -206,7 +206,7 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-[#7c3aed]/40 to-transparent" />
 
       {/* ── Bottom Bar ── */}
-      <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="relative w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto py-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
           <p className="text-gray-500">
             &copy; 2025 RoofPlanet. All rights reserved.

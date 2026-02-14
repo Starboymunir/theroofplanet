@@ -110,7 +110,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden pt-32">
         <Image
           src="https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Beautiful home exterior"
@@ -176,7 +176,7 @@ export default function ContactPage() {
 
       {/* Form + Sidebar */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <FadeIn>
             <div className="text-center mb-16">
               <span className="text-roof-amber font-bold text-sm uppercase tracking-widest">Free Estimate</span>

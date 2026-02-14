@@ -291,7 +291,7 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           HERO CAROUSEL
           ════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[700px] overflow-hidden">
+      <section className="relative h-screen min-h-[700px] overflow-hidden pt-32">
         {/* Background slides */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -319,7 +319,7 @@ export default function HomePage() {
 
         {/* Hero content */}
         <div className="relative z-10 h-full flex items-center">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 w-full">
+          <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto w-full">
             <div className="max-w-3xl">
               {/* Badge */}
               <AnimatePresence mode="wait">
@@ -413,7 +413,7 @@ export default function HomePage() {
 
         {/* Slide navigation */}
         <div className="absolute bottom-12 left-0 right-0 z-20">
-          <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
                 {heroSlides.map((_, i) => (
@@ -463,7 +463,7 @@ export default function HomePage() {
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#7c3aed]/5 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-[#7c3aed]/3 rounded-full blur-[100px]" />
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4">
             {statsData.map((stat, i) => (
               <StatCard key={stat.label} stat={stat} index={i} />
@@ -484,7 +484,7 @@ export default function HomePage() {
           }}
         />
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -573,7 +573,7 @@ export default function HomePage() {
           WHY CHOOSE US
           ════════════════════════════════════════ */}
       <section className="relative bg-[#f8f6f0] py-24 sm:py-32 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Image */}
             <motion.div
@@ -665,7 +665,7 @@ export default function HomePage() {
       <section className="relative bg-[#0a1628] py-24 sm:py-32 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#7c3aed]/5 rounded-full blur-[150px]" />
 
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -759,7 +759,7 @@ export default function HomePage() {
           PROJECT GALLERY
           ════════════════════════════════════════ */}
       <section className="relative bg-white py-24 sm:py-32 overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -812,7 +812,7 @@ export default function HomePage() {
           SERVICE AREAS
           ════════════════════════════════════════ */}
       <section className="relative bg-[#f8f6f0] py-24 sm:py-32">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

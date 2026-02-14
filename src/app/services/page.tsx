@@ -165,7 +165,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* ────────────────────────── 1. HERO ────────────────────────── */}
-      <section className="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden pt-32">
         <Image
           src="https://images.pexels.com/photos/7788269/pexels-photo-7788269.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Professional roofing services"
@@ -210,7 +210,7 @@ export default function ServicesPage() {
             key={svc.id}
             className={`py-20 md:py-28 ${idx % 2 === 0 ? "bg-white" : "bg-roof-cream"}`}
           >
-            <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 {/* IMAGE */}
                 <div className={`${!isImageLeft ? "lg:order-2" : ""}`}>
@@ -279,7 +279,7 @@ export default function ServicesPage() {
       {/* ────────────────── 3. ADDITIONAL SERVICES ────────────────── */}
       <Section className="py-20 md:py-28 bg-roof-navy relative overflow-hidden">
         <div className="pattern-dots absolute inset-0 opacity-20" />
-        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <div className="text-center mb-14">
             <span className="text-roof-gold font-semibold text-sm uppercase tracking-wider">
               More Solutions
@@ -311,7 +311,7 @@ export default function ServicesPage() {
 
       {/* ────────────────────── 4. OUR PROCESS ────────────────────── */}
       <Section className="py-20 md:py-28 bg-roof-cream relative overflow-hidden">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <div className="text-center mb-16">
             <span className="text-roof-amber font-semibold text-sm uppercase tracking-wider">
               How It Works

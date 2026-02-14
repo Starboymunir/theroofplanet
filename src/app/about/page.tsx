@@ -126,7 +126,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ─────────── 1. HERO ─────────── */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32">
         {/* bg image */}
         <Image
           src="https://images.pexels.com/photos/33404248/pexels-photo-33404248.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
@@ -183,7 +183,7 @@ export default function AboutPage() {
 
       {/* ─────────── 2. MISSION / ABOUT ─────────── */}
       <Section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             {/* left: image with decorative gold border accent */}
             <motion.div
@@ -265,7 +265,7 @@ export default function AboutPage() {
       {/* ─────────── 3. OUR VALUES ─────────── */}
       <Section className="py-20 md:py-28 bg-roof-dark relative overflow-hidden">
         <div className="pattern-dots" />
-        <div className="relative z-10 max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative z-10 w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           {/* heading */}
           <div className="text-center mb-14">
             <span className="text-roof-amber font-bold text-sm uppercase tracking-widest">

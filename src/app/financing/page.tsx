@@ -81,7 +81,7 @@ export default function FinancingPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden pt-32">
         <Image
           src="https://images.pexels.com/photos/259588/pexels-photo-259588.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Beautiful home exterior"
@@ -123,7 +123,7 @@ export default function FinancingPage() {
 
       {/* Benefits */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <FadeIn>
             <div className="text-center mb-16">
               <span className="text-roof-amber font-bold text-sm uppercase tracking-widest">Why Finance Your Roof?</span>
@@ -152,7 +152,7 @@ export default function FinancingPage() {
       {/* Plans */}
       <section className="py-20 md:py-28 bg-roof-dark relative overflow-hidden">
         <div className="absolute inset-0 pattern-dots opacity-30" />
-        <div className="relative max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <FadeIn>
             <div className="text-center mb-16">
               <span className="text-roof-amber font-bold text-sm uppercase tracking-widest">Our Plans</span>
@@ -210,7 +210,7 @@ export default function FinancingPage() {
 
       {/* How It Works */}
       <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           <FadeIn>
             <div className="text-center mb-16">
               <span className="text-roof-amber font-bold text-sm uppercase tracking-widest">Simple Process</span>
