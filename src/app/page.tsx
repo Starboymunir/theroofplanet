@@ -291,7 +291,7 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           HERO CAROUSEL
           ════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[700px] overflow-hidden pt-32">
+      <section className="relative h-screen min-h-[700px] overflow-hidden pt-32 lg:pt-52">
         {/* Background slides */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -394,14 +394,14 @@ export default function HomePage() {
               >
                 <Link
                   href="/estimate"
-                  className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-extrabold px-12 py-6 rounded-full text-xl md:text-2xl shadow-2xl shadow-[#7c3aed]/40 hover:shadow-[#7c3aed]/60 transition-all duration-300 hover:scale-[1.05] active:scale-[0.98] animate-pulse-subtle"
+                  className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-extrabold px-8 sm:px-12 py-5 sm:py-6 rounded-full text-lg sm:text-xl md:text-2xl shadow-2xl shadow-[#7c3aed]/40 hover:shadow-[#7c3aed]/60 transition-all duration-300 hover:scale-[1.05] active:scale-[0.98] animate-pulse-subtle"
                 >
                   GET FREE INSTANT ESTIMATE
-                  <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
                   href="tel:+18323706314"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white hover:text-[#a78bfa] font-bold px-8 py-4 rounded-full text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white hover:text-[#a78bfa] font-bold px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
                 >
                   <Phone className="w-5 h-5" />
                   (832) 370-6314
@@ -883,17 +883,17 @@ export default function HomePage() {
               Get a free, no-obligation estimate today. Join 2,500+ happy homeowners who trust
               RoofPlanet.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
               <Link
                 href="/estimate"
-                className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold px-10 py-5 rounded-full text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03]"
+                className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03]"
               >
                 Get Free Estimate
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
               <a
                 href="tel:+18323706314"
-                className="inline-flex items-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white font-bold px-10 py-5 rounded-full text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
+                className="inline-flex items-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
               >
                 <Phone className="w-5 h-5" />
                 Call Now

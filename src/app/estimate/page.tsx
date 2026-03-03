@@ -8,7 +8,7 @@ export default function EstimatePage() {
   return (
     <main className="bg-white">
       {/* ── Hero Section ── */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-br from-[#0a1628] via-[#131f36] to-[#0a1628] overflow-hidden">
+      <section className="relative pt-32 lg:pt-52 pb-16 bg-gradient-to-br from-[#0a1628] via-[#131f36] to-[#0a1628] overflow-hidden">
         {/* Background accents */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-10 w-96 h-96 bg-[#7c3aed]/10 rounded-full blur-3xl" />
@@ -66,7 +66,7 @@ export default function EstimatePage() {
             transition={{ duration: 0.7 }}
             className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden"
           >
-            <div className="w-full aspect-[4/3] md:aspect-[16/10]">
+            <div className="w-full aspect-[3/4] sm:aspect-[4/3] md:aspect-[16/10]">
               <iframe
                 src="https://app.roofr.com/instant-estimator/0df6df83-26e0-4818-a69a-5e5b79cd6952/RoofPlanet"
                 className="w-full h-full border-0"
@@ -96,17 +96,17 @@ export default function EstimatePage() {
             <p className="text-gray-600 text-lg max-w-xl mx-auto mb-8">
               Our team is standing by to answer your questions and schedule a free on-site inspection.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center px-4">
               <a
                 href="tel:+18323706314"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold px-8 py-4 rounded-full text-lg shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03]"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03]"
               >
                 <Phone className="w-5 h-5" />
                 (832) 370-6314
               </a>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 border-2 border-[#7c3aed] text-[#7c3aed] hover:bg-[#7c3aed] hover:text-white font-bold px-8 py-4 rounded-full text-lg transition-all duration-300 hover:scale-[1.03]"
+                className="inline-flex items-center justify-center gap-2 border-2 border-[#7c3aed] text-[#7c3aed] hover:bg-[#7c3aed] hover:text-white font-bold px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg transition-all duration-300 hover:scale-[1.03]"
               >
                 Contact Us <ArrowRight className="w-5 h-5" />
               </Link>

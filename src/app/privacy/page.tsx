@@ -55,7 +55,7 @@ export default function PrivacyPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden pt-32">
+      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden pt-32 lg:pt-52">
         <Image
           src="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Home exterior"

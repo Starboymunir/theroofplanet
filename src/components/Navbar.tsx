@@ -93,21 +93,22 @@ export default function Navbar() {
         }`}
       >
         <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
-          <div className="flex justify-between items-center h-[90px]">
-            {/* ── Logo ── */}
-            <Link href="/" className="relative group flex items-center" onClick={() => setIsOpen(false)}>
+          {/* ── Desktop: Stacked layout — big logo on top, nav below ── */}
+          <div className="hidden lg:flex flex-col items-center py-3">
+            {/* Large Logo */}
+            <Link href="/" className="group mb-2">
               <Image
                 src="/roof-planet w glow copy.png"
                 alt="RoofPlanet"
-                width={320}
-                height={90}
-                className="h-[70px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={400}
+                height={150}
+                className="h-[120px] xl:h-[140px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
 
-            {/* ── Desktop Nav Links ── */}
-            <div className="hidden lg:flex items-center gap-1">
+            {/* Nav row: links + CTA */}
+            <div className="flex items-center gap-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -115,36 +116,50 @@ export default function Navbar() {
                   className="relative px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors group"
                 >
                   {link.label}
-                  {/* Animated gold underline */}
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] group-hover:w-3/4 transition-all duration-300 ease-out rounded-full" />
                 </Link>
               ))}
-            </div>
-
-            {/* ── Right Side: CTA + Mobile Toggle ── */}
-            <div className="flex items-center gap-3">
-              {/* Phone CTA — desktop only */}
+              <span className="w-px h-5 bg-white/20 mx-2" />
               <a
                 href="tel:+18323706314"
-                className="hidden lg:flex items-center gap-1.5 text-[#a78bfa] hover:text-white text-sm font-semibold transition-colors mr-1"
+                className="flex items-center gap-1.5 text-[#a78bfa] hover:text-white text-sm font-semibold transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                <span className="hidden xl:inline">(832) 370-6314</span>
+                (832) 370-6314
               </a>
-
-              {/* Get Free Quote CTA */}
               <Link
                 href="/estimate"
-                className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold text-sm py-2.5 px-6 rounded-full shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold text-sm py-2.5 px-6 rounded-full shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] ml-2"
               >
                 Get Free Quote
                 <ArrowRight className="w-4 h-4" />
               </Link>
+            </div>
+          </div>
 
-              {/* Mobile Toggle */}
+          {/* ── Mobile / Tablet: Logo left, hamburger right ── */}
+          <div className="flex lg:hidden justify-between items-center h-[80px]">
+            <Link href="/" className="group flex items-center" onClick={() => setIsOpen(false)}>
+              <Image
+                src="/roof-planet w glow copy.png"
+                alt="RoofPlanet"
+                width={200}
+                height={70}
+                className="h-[60px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                priority
+              />
+            </Link>
+
+            <div className="flex items-center gap-3">
+              <Link
+                href="/estimate"
+                className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] text-white font-bold text-xs py-2 px-4 rounded-full shadow-lg shadow-[#7c3aed]/25"
+              >
+                Free Quote
+              </Link>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="lg:hidden relative w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 transition-all"
+                className="relative w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 transition-all"
                 aria-label="Toggle menu"
               >
                 <AnimatePresence mode="wait">
@@ -197,7 +212,7 @@ export default function Navbar() {
 
             {/* Close Button */}
             <motion.button
-              className="absolute top-[calc(2.25rem+1.125rem)] right-4 sm:right-6 z-10 w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 transition-all"
+              className="absolute top-14 right-4 sm:right-6 z-10 w-11 h-11 flex items-center justify-center rounded-xl bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/10 transition-all"
               onClick={() => setIsOpen(false)}
               aria-label="Close menu"
               initial={{ opacity: 0, rotate: -90 }}
@@ -233,11 +248,11 @@ export default function Navbar() {
               ))}
 
               {/* Mobile CTA Buttons */}
-              <motion.div variants={mobileItemVariants} className="mt-10 w-full max-w-xs space-y-4">
+              <motion.div variants={mobileItemVariants} className="mt-10 w-full max-w-xs space-y-4 px-4">
                 <Link
                   href="/estimate"
                   onClick={() => setIsOpen(false)}
-                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] text-roof-dark font-bold text-lg py-4 rounded-full shadow-lg shadow-[#7c3aed]/30"
+                  className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] text-white font-bold text-lg py-4 rounded-full shadow-lg shadow-[#7c3aed]/30"
                 >
                   Get Free Quote
                   <ArrowRight className="w-5 h-5" />
