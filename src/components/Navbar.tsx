@@ -93,15 +93,15 @@ export default function Navbar() {
         }`}
       >
         <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
-          <div className="flex justify-between items-center h-[72px]">
+          <div className="flex justify-between items-center h-[90px]">
             {/* ── Logo ── */}
             <Link href="/" className="relative group flex items-center" onClick={() => setIsOpen(false)}>
               <Image
                 src="/roof-planet w glow copy.png"
                 alt="RoofPlanet"
-                width={220}
-                height={65}
-                className="h-14 w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={320}
+                height={90}
+                className="h-[70px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
