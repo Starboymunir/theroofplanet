@@ -134,7 +134,7 @@ export default function Navbar() {
 
               {/* Get Free Quote CTA */}
               <Link
-                href="/contact"
+                href="/estimate"
                 className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold text-sm py-2.5 px-6 rounded-full shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
               >
                 Get Free Quote
@@ -235,7 +235,7 @@ export default function Navbar() {
               {/* Mobile CTA Buttons */}
               <motion.div variants={mobileItemVariants} className="mt-10 w-full max-w-xs space-y-4">
                 <Link
-                  href="/contact"
+                  href="/estimate"
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] text-roof-dark font-bold text-lg py-4 rounded-full shadow-lg shadow-[#7c3aed]/30"
                 >

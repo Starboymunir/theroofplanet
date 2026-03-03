@@ -389,7 +389,7 @@ export default function AboutPage() {
             the team that treats every home like their own.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="btn-primary inline-flex items-center gap-2 text-lg">
+            <Link href="/estimate" className="btn-primary inline-flex items-center gap-2 text-lg">
               Get My Free Estimate <ArrowRight className="w-5 h-5" />
             </Link>
             <Link

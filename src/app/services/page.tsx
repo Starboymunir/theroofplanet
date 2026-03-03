@@ -265,7 +265,7 @@ export default function ServicesPage() {
                       ))}
                     </ul>
 
-                    <Link href="/contact" className="btn-primary">
+                    <Link href="/estimate" className="btn-primary">
                       Get a Free Quote <ArrowRight className="w-4 h-4" />
                     </Link>
                   </StaggerItem>
@@ -404,7 +404,7 @@ export default function ServicesPage() {
             transparent quote within 24&nbsp;hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="btn-primary text-base">
+            <Link href="/estimate" className="btn-primary text-base">
               Schedule Free Inspection <ArrowRight className="w-4 h-4" />
             </Link>
             <a

@@ -52,7 +52,7 @@ export default function Footer() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/estimate"
               className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#5b21b6] text-white font-bold px-8 py-4 rounded-xl text-lg shadow-lg shadow-[#7c3aed]/20 hover:shadow-[#7c3aed]/40 hover:scale-[1.03] transition-all duration-300"
             >
               Get Free Quote
@@ -106,7 +106,7 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-[#7c3aed]" />
               </a>
               <a
-                href="https://maps.google.com/?q=123+Main+St+Houston+TX+77001"
+                href="https://maps.google.com/?q=10690+Shadow+Wood+Dr+Ste105+Houston+TX+77043"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Find us on map"
@@ -165,7 +165,7 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-[#7c3aed]" />
                 </div>
                 <span className="text-gray-400 leading-relaxed">
-                  123 Main St<br />Houston, TX 77001
+                  10690 Shadow Wood Dr, Ste 105<br />Houston, TX 77043
                 </span>
               </li>
               <li>

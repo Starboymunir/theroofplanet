@@ -192,7 +192,7 @@ export default function FinancingPage() {
                     ))}
                   </ul>
                   <Link
-                    href="/contact"
+                    href="/estimate"
                     className={`block text-center font-bold py-3.5 px-6 rounded-full transition-all ${
                       plan.popular
                         ? 'btn-primary w-full justify-center'
@@ -296,7 +296,7 @@ export default function FinancingPage() {
               Apply for financing today or give us a call. Our team is ready to help you find the perfect plan for your budget.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="btn-primary text-lg px-10 py-4">
+              <Link href="/estimate" className="btn-primary text-lg px-10 py-4">
                 <span>Apply Now</span> <ArrowRight className="w-5 h-5" />
               </Link>
               <a href="tel:+18323706314" className="btn-outline text-lg px-10 py-4">

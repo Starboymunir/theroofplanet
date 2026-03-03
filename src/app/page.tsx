@@ -393,7 +393,7 @@ export default function HomePage() {
                 className="flex flex-col sm:flex-row gap-4"
               >
                 <Link
-                  href="/contact"
+                  href="/estimate"
                   className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold px-8 py-4 rounded-full text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
                 >
                   Get Free Estimate
@@ -885,7 +885,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link
-                href="/contact"
+                href="/estimate"
                 className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold px-10 py-5 rounded-full text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03]"
               >
                 Get Free Estimate
