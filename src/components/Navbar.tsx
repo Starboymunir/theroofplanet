@@ -77,7 +77,7 @@ export default function Navbar() {
             </a>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-gray-400">
-            <span>Houston, TX</span>
+            <span>Proudly Serving Texas</span>
             <span>|</span>
             <span className="text-[#a78bfa]/80">Licensed &amp; Insured</span>
           </div>
@@ -97,11 +97,11 @@ export default function Navbar() {
             {/* ── Logo ── */}
             <Link href="/" className="relative group flex items-center" onClick={() => setIsOpen(false)}>
               <Image
-                src="/roofplanet-full_horizontal_logo-pixel.webp"
+                src="/roof-planet w glow copy.png"
                 alt="RoofPlanet"
-                width={180}
-                height={50}
-                className="h-10 w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={220}
+                height={65}
+                className="h-14 w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
@@ -256,7 +256,7 @@ export default function Navbar() {
                 variants={mobileItemVariants}
                 className="mt-8 text-gray-500 text-sm text-center"
               >
-                Houston, TX &bull; Licensed &amp; Insured
+                Proudly Serving Texas &bull; Licensed &amp; Insured
               </motion.p>
             </motion.div>
           </motion.div>

@@ -320,3 +320,17 @@ h1, h2, h3, h4, .font-heading {
   background: rgba(124, 58, 237, 0.3);
   color: #0a1628;
 }
+
+/* Subtle pulse for hero CTA */
+@keyframes pulse-subtle {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(124, 58, 237, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(124, 58, 237, 0); }
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s ease-in-out infinite;
+}
+
+/* Mobile bottom bar spacing */
+@media (max-width: 767px) {
+  footer { padding-bottom: 64px; }
+}

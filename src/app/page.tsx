@@ -379,7 +379,7 @@ export default function HomePage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="text-lg sm:text-xl text-white/70 max-w-xl mb-10 leading-relaxed"
+                  className="text-lg sm:text-xl text-white/70 max-w-xl mb-6 leading-relaxed"
                 >
                   {heroSlides[currentSlide].description}
                 </motion.p>
@@ -389,15 +389,15 @@ export default function HomePage() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: 0.5 }}
-                className="flex flex-col sm:flex-row gap-4"
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="flex flex-col sm:flex-row gap-5"
               >
                 <Link
                   href="/estimate"
-                  className="group inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-roof-dark font-bold px-8 py-4 rounded-full text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
+                  className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-extrabold px-12 py-6 rounded-full text-xl md:text-2xl shadow-2xl shadow-[#7c3aed]/40 hover:shadow-[#7c3aed]/60 transition-all duration-300 hover:scale-[1.05] active:scale-[0.98] animate-pulse-subtle"
                 >
-                  Get Free Estimate
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  GET FREE INSTANT ESTIMATE
+                  <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
                   href="tel:+18323706314"
