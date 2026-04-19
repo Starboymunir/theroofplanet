@@ -9,6 +9,7 @@ import { Menu, X, Phone, ArrowRight } from 'lucide-react';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/services', label: 'Services' },
+  { href: '/gallery', label: 'Gallery' },
   { href: '/about', label: 'About' },
   { href: '/financing', label: 'Financing' },
   { href: '/contact', label: 'Contact' },
@@ -93,21 +94,21 @@ export default function Navbar() {
         }`}
       >
         <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
-          {/* ── Desktop: Stacked layout — big logo on top, nav below ── */}
-          <div className="hidden lg:flex flex-col items-center py-3">
-            {/* Large Logo */}
-            <Link href="/" className="group mb-2">
+          {/* ── Desktop: Logo left, nav + CTA right ── */}
+          <div className="hidden lg:flex items-center justify-between py-3">
+            {/* Large Logo — left */}
+            <Link href="/" className="group shrink-0">
               <Image
                 src="/roof-planet w glow copy.png"
                 alt="RoofPlanet"
                 width={400}
                 height={150}
-                className="h-[120px] xl:h-[140px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                className="h-[100px] xl:h-[120px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
 
-            {/* Nav row: links + CTA */}
+            {/* Nav + CTA — right */}
             <div className="flex items-center gap-2">
               {navLinks.map((link) => (
                 <Link

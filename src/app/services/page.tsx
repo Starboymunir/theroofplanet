@@ -165,7 +165,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* ────────────────────────── 1. HERO ────────────────────────── */}
-      <section className="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden pt-32 lg:pt-52">
+      <section className="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden pt-32 lg:pt-44">
         <Image
           src="https://images.pexels.com/photos/7788269/pexels-photo-7788269.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Professional roofing services"

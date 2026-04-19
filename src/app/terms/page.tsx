@@ -61,7 +61,7 @@ export default function TermsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden pt-32 lg:pt-52">
+      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden pt-32 lg:pt-44">
         <Image
           src="https://images.pexels.com/photos/5563473/pexels-photo-5563473.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
           alt="Modern home"
