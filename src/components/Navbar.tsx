@@ -101,9 +101,9 @@ export default function Navbar() {
               <Image
                 src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
-                width={400}
-                height={150}
-                className="h-[100px] xl:h-[120px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={500}
+                height={200}
+                className="h-[140px] xl:h-[160px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
@@ -144,9 +144,9 @@ export default function Navbar() {
               <Image
                 src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
-                width={200}
-                height={70}
-                className="h-[60px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={250}
+                height={90}
+                className="h-[80px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
