@@ -139,14 +139,14 @@ export default function Navbar() {
           </div>
 
           {/* ── Mobile / Tablet: Logo left, hamburger right ── */}
-          <div className="flex lg:hidden justify-between items-center h-[80px]">
+          <div className="flex lg:hidden justify-between items-center h-[100px]">
             <Link href="/" className="group flex items-center" onClick={() => setIsOpen(false)}>
               <Image
                 src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
-                width={250}
-                height={90}
-                className="h-[80px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={400}
+                height={150}
+                className="h-[120px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
