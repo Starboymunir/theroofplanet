@@ -5,15 +5,60 @@ import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
-/* ── Gallery images — add filenames from public/gallery/ here ── */
-const galleryImages = [
-  // When you add photos to public/gallery/, list them here like:
-  // { src: '/gallery/photo1.jpg', alt: 'Roof replacement in Houston' },
-  // { src: '/gallery/photo2.jpg', alt: 'Drone shot of new shingle roof' },
-] as { src: string; alt: string }[];
-
-/* ── Placeholder images while waiting for real photos ── */
-const placeholderCount = 0; // Set to 0 once real images are added
+/* ── Gallery images ── */
+const galleryImages: { src: string; alt: string }[] = [
+  { src: '/gallery/roofplanet/Photo_6553721_DJI_121_jpg_8200583_0_2022726152432_photo_original.jpg.jpeg', alt: 'Aerial roof inspection — Houston project' },
+  { src: '/gallery/roofplanet/Photo_6553727_DJI_127_jpg_7254784_0_2022726152644_photo_original.jpg.jpeg', alt: 'Drone roof survey — Houston project' },
+  { src: '/gallery/roofplanet/dji_fly_20221021_124506_190_1666374320863_photo.jpeg', alt: 'Completed roof — October 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221021_124522_191_1666374336816_photo.jpeg', alt: 'Aerial view — October 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221103_102014_204_1667488833682_photo.jpeg', alt: 'Roof restoration — November 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221109_110038_218_1668013262751_photo.jpeg', alt: 'Shingle replacement — November 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221214_122242_226_1671042175529_photo.jpeg', alt: 'New roof installation — December 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221214_122316_227_1671042209767_photo.jpeg', alt: 'Roofing project — December 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221221_122050_249_1671646863334_photo.jpeg', alt: 'Completed project — December 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221221_122120_251_1671646893393_photo.jpeg', alt: 'Drone inspection — December 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20221221_122134_252_1671646911823_photo.jpeg', alt: 'Roof detail — December 2022' },
+  { src: '/gallery/roofplanet/dji_fly_20230119_111406_304_1674148464613_photo.jpeg', alt: 'Roof replacement — January 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230119_111454_305_1674148509134_photo.jpeg', alt: 'Aerial view — January 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230320_142730_330_1679340474084_photo.jpeg', alt: 'Spring project — March 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230322_121938_338_1679505632717_photo.jpeg', alt: 'Completed roof — March 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230322_121946_339_1679505646355_photo.jpeg', alt: 'Roofing detail — March 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230327_124904_357_1679939361183_photo.jpeg', alt: 'New shingles — March 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230524_100850_397_1684940948030_photo.jpeg', alt: 'Roof installation — May 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230524_100904_398_1684940959328_photo.jpeg', alt: 'Aerial shot — May 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230524_101208_404_1684941175925_photo.jpeg', alt: 'Completed work — May 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230619_103014_412_1687188627332_photo.jpeg', alt: 'Summer project — June 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230619_103100_413_1687188674464_photo.jpeg', alt: 'Roof restoration — June 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230802_144030_431_1691005247385_photo.jpeg', alt: 'New roof — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230802_144044_432_1691005260020_photo.jpeg', alt: 'Aerial view — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230804_114426_445_1691167479028_photo.jpeg', alt: 'Roofing project — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230804_114522_446_1691167536574_photo.jpeg', alt: 'Completed roof — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230809_131752_462_1691605092569_photo.jpeg', alt: 'Drone inspection — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230809_131804_463_1691605097666_photo.jpeg', alt: 'Roof detail — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20230809_131818_464_1691605111016_photo.jpeg', alt: 'Aerial overview — August 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231004_092952_493_1696429808720_photo.jpeg', alt: 'Fall project — October 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231004_093014_494_1696429830930_photo.jpeg', alt: 'Roof replacement — October 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231004_093148_498_1696429925128_photo.jpeg', alt: 'Completed work — October 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231022_090544_510_1697983572125_photo.jpeg', alt: 'New installation — October 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231022_090622_512_1697983622391_photo.jpeg', alt: 'Aerial shot — October 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231129_114548_563_1701279963101_photo.jpeg', alt: 'Winter project — November 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231129_114616_565_1701279997359_photo.jpeg', alt: 'Roof restoration — November 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20231129_114638_566_1701280019429_photo.jpeg', alt: 'Completed roof — November 2023' },
+  { src: '/gallery/roofplanet/dji_fly_20240212_120842_589_1707761345153_photo.jpeg', alt: 'New roof — February 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240212_120906_590_1707761382854_photo.jpeg', alt: 'Aerial view — February 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240212_120948_592_1707761430771_photo.jpeg', alt: 'Roofing detail — February 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240212_121008_594_1707761456513_photo.jpeg', alt: 'Completed project — February 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240306_151628_613_1709759855090_photo.jpeg', alt: 'Spring project — March 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240306_151714_617_1709759885152_photo.jpeg', alt: 'Roof replacement — March 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240501_120050_646_1714582909969_photo.jpeg', alt: 'New installation — May 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240501_120158_650_1714582963949_photo.jpeg', alt: 'Aerial view — May 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240501_120224_651_1714582968872_photo.jpeg', alt: 'Completed roof — May 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240924_174748_744_1727218147156_photo.jpeg', alt: 'Fall project — September 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240924_174822_745_1727218141631_photo.jpeg', alt: 'Roof restoration — September 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20240924_174840_746_1727218183678_photo.jpeg', alt: 'Aerial overview — September 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20241007_115018_756_1728319841924_photo.jpeg', alt: 'Latest project — October 2024' },
+  { src: '/gallery/roofplanet/dji_fly_20241007_115214_757_1728319956956_photo.jpeg', alt: 'Completed work — October 2024' },
+];
 
 export default function GalleryPage() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
