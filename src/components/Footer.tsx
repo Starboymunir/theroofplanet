@@ -79,7 +79,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="inline-flex items-center mb-5 group">
               <Image
-                src="/roof-planet w glow copy.png"
+                src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
                 width={200}
                 height={60}

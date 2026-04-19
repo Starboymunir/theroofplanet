@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     "Expert roofing, siding, windows, and gutters in Houston, TX. Free estimates and insurance claim assistance. 15+ years of quality work.",
   keywords: "roofing, Houston, roof repair, roof replacement, storm damage, insurance claims, siding, gutters, windows",
   icons: {
-    icon: "/roof-planet w glow copy.png",
-    apple: "/roof-planet w glow copy.png",
+    icon: "/roofplanet-logo-5.png",
+    apple: "/roofplanet-logo-5.png",
   },
   openGraph: {
     title: "RoofPlanet — Professional Roofing & Restoration",

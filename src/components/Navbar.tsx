@@ -99,7 +99,7 @@ export default function Navbar() {
             {/* Large Logo — left */}
             <Link href="/" className="group shrink-0">
               <Image
-                src="/roof-planet w glow copy.png"
+                src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
                 width={400}
                 height={150}
@@ -142,7 +142,7 @@ export default function Navbar() {
           <div className="flex lg:hidden justify-between items-center h-[80px]">
             <Link href="/" className="group flex items-center" onClick={() => setIsOpen(false)}>
               <Image
-                src="/roof-planet w glow copy.png"
+                src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
                 width={200}
                 height={70}
