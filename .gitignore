@@ -37,6 +37,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# original unoptimized gallery photos (225MB)
+/public/gallery/roofplanet/
+
+# optimization script
+/scripts/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
