@@ -74,7 +74,7 @@ export default function GalleryPage() {
   return (
     <>
       {/* ── Hero ── */}
-      <section className="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden pt-32 lg:pt-44">
+      <section className="relative h-[60vh] min-h-[420px] flex items-center justify-center overflow-hidden pt-32 lg:pt-[500px]">
         <div className="absolute inset-0 bg-gradient-to-br from-[#0a1628] via-[#131f36] to-[#0a1628]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(124,58,237,0.15),transparent_60%)]" />
 

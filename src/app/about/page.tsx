@@ -126,7 +126,7 @@ export default function AboutPage() {
   return (
     <>
       {/* ─────────── 1. HERO ─────────── */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 lg:pt-44">
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-32 lg:pt-[500px]">
         {/* bg image */}
         <Image
           src="https://images.pexels.com/photos/33404248/pexels-photo-33404248.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"

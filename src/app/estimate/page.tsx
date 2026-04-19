@@ -8,7 +8,7 @@ export default function EstimatePage() {
   return (
     <main className="bg-white">
       {/* ── Hero Section ── */}
-      <section className="relative pt-32 lg:pt-44 pb-16 bg-gradient-to-br from-[#0a1628] via-[#131f36] to-[#0a1628] overflow-hidden">
+      <section className="relative pt-32 lg:pt-[500px] pb-16 bg-gradient-to-br from-[#0a1628] via-[#131f36] to-[#0a1628] overflow-hidden">
         {/* Background accents */}
         <div className="absolute inset-0">
           <div className="absolute top-20 right-10 w-96 h-96 bg-[#7c3aed]/10 rounded-full blur-3xl" />
