@@ -291,7 +291,7 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           HERO CAROUSEL
           ════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[700px] overflow-hidden pt-32 lg:pt-[500px]">
+      <section className="relative h-screen min-h-[700px] overflow-hidden pt-32 lg:pt-44">
         {/* Background slides */}
         <AnimatePresence mode="wait">
           <motion.div

@@ -95,15 +95,15 @@ export default function Navbar() {
       >
         <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
           {/* ── Desktop: Logo left, nav + CTA right ── */}
-          <div className="hidden lg:flex items-center justify-between py-6">
+          <div className="hidden lg:flex items-center justify-between py-3">
             {/* Large Logo — left */}
             <Link href="/" className="group shrink-0">
               <Image
                 src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
-                width={1500}
-                height={600}
-                className="h-[400px] xl:h-[450px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                width={800}
+                height={160}
+                className="h-[80px] xl:h-[90px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
