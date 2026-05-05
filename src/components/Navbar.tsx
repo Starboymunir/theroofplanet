@@ -71,10 +71,10 @@ export default function Navbar() {
             </a>
             <span className="hidden sm:inline text-gray-400">|</span>
             <a
-              href="mailto:info@theroofplanet.com"
+              href="mailto:admin@theroofplanet.com"
               className="hidden sm:inline text-gray-300 hover:text-[#a78bfa] transition-colors"
             >
-              info@theroofplanet.com
+              admin@theroofplanet.com
             </a>
           </div>
           <div className="hidden sm:flex items-center gap-4 text-gray-400">

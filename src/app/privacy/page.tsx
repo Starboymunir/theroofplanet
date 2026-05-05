@@ -43,7 +43,7 @@ const sections = [
   },
   {
     title: 'Your Rights',
-    content: 'You have the right to request access to, correction of, or deletion of your personal information. To exercise these rights, please contact us at info@theroofplanet.com.',
+    content: 'You have the right to request access to, correction of, or deletion of your personal information. To exercise these rights, please contact us at admin@theroofplanet.com.',
   },
   {
     title: 'Changes to This Policy',
@@ -120,7 +120,7 @@ export default function PrivacyPage() {
             <p className="text-roof-gray mb-4">If you have questions about this privacy policy:</p>
             <div className="space-y-2 text-sm">
               <p><span className="font-bold text-roof-charcoal">Phone:</span> <a href="tel:+18323706314" className="text-roof-amber font-semibold hover:underline">(832) 370-6314</a></p>
-              <p><span className="font-bold text-roof-charcoal">Email:</span> <a href="mailto:info@theroofplanet.com" className="text-roof-amber font-semibold hover:underline">info@theroofplanet.com</a></p>
+              <p><span className="font-bold text-roof-charcoal">Email:</span> <a href="mailto:admin@theroofplanet.com" className="text-roof-amber font-semibold hover:underline">admin@theroofplanet.com</a></p>
               <p><span className="font-bold text-roof-charcoal">Service Area:</span> <span className="text-roof-gray">Greater Houston, TX</span></p>
             </div>
           </div>

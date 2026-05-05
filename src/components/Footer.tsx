@@ -99,7 +99,7 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-[#7c3aed]" />
               </a>
               <a
-                href="mailto:info@theroofplanet.com"
+                href="mailto:admin@theroofplanet.com"
                 aria-label="Email us"
                 className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center hover:bg-[#7c3aed]/20 hover:border-[#7c3aed]/40 transition-all duration-300"
               >
@@ -179,12 +179,12 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@theroofplanet.com" className="flex items-center gap-3 group">
+                <a href="mailto:admin@theroofplanet.com" className="flex items-center gap-3 group">
                   <div className="w-9 h-9 shrink-0 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-[#7c3aed]/20 group-hover:border-[#7c3aed]/40 transition-all duration-300">
                     <Mail className="w-4 h-4 text-[#7c3aed]" />
                   </div>
                   <span className="text-gray-400 group-hover:text-[#7c3aed] transition-colors">
-                    info@theroofplanet.com
+                    admin@theroofplanet.com
                   </span>
                 </a>
               </li>

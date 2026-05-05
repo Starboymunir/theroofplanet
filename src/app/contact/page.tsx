@@ -22,7 +22,7 @@ const serviceOptions = [
 
 const contactInfo = [
   { icon: Phone, label: 'Call Us', value: '(832) 370-6314', href: 'tel:+18323706314', accent: true },
-  { icon: Mail, label: 'Email', value: 'info@theroofplanet.com', href: 'mailto:info@theroofplanet.com', accent: false },
+  { icon: Mail, label: 'Email', value: 'admin@theroofplanet.com', href: 'mailto:admin@theroofplanet.com', accent: false },
   { icon: MapPin, label: 'Service Area', value: 'Greater Houston, TX & surrounding counties', href: '', accent: false },
   { icon: Clock, label: 'Hours', value: 'Mon–Fri 8am–6pm · Sat 9am–1pm', href: '', accent: false },
 ];
