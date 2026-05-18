@@ -310,7 +310,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20" />
 
         {/* Hero content */}
-        <div className="relative z-10 h-full flex items-center pt-28 pb-44 lg:pt-0 lg:pb-0">
+        <div className="relative z-10 h-full flex items-center pt-28 pb-24 lg:pt-0 lg:pb-0">
           <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
             <div className="max-w-3xl">
               {/* Badge */}
@@ -400,7 +400,7 @@ export default function HomePage() {
         </div>
 
         {/* Slide navigation */}
-        <div className="absolute bottom-28 lg:bottom-12 left-0 right-0 z-20">
+        <div className="hidden lg:block absolute bottom-12 left-0 right-0 z-20">
           <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
