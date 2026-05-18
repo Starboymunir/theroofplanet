@@ -80,7 +80,7 @@ export default function Navbar() {
           <div className="hidden sm:flex items-center gap-4 text-gray-400">
             <span>Proudly Serving Texas</span>
             <span>|</span>
-            <span className="text-[#a78bfa]/80">Licensed &amp; Insured</span>
+            <span className="text-[#a78bfa]/80">Fully Insured</span>
           </div>
         </div>
       </div>
@@ -272,7 +272,7 @@ export default function Navbar() {
                 variants={mobileItemVariants}
                 className="mt-8 text-gray-500 text-sm text-center"
               >
-                Proudly Serving Texas &bull; Licensed &amp; Insured
+                Proudly Serving Texas &bull; Fully Insured
               </motion.p>
             </motion.div>
           </motion.div>

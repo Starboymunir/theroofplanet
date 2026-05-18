@@ -65,7 +65,7 @@ const values = [
 const milestones = [
   {
     year: "2009",
-    title: "Founded in Houston, TX",
+    title: "Serving Houston Roofs Since 2009",
     desc: "RoofPlanet was born out of a simple idea — deliver honest, high-quality roofing to Houston homeowners.",
   },
   {
@@ -224,9 +224,9 @@ export default function AboutPage() {
               </h2>
 
               <p className="text-roof-gray leading-relaxed mb-4">
-                Founded in 2009, RoofPlanet started as a family-owned roofing
-                company with a single crew and a relentless commitment to doing
-                things right. Based in Houston, TX, we&apos;ve grown into one of the
+                Built on roofing experience since 2009, RoofPlanet started as a
+                family-owned company with a single crew and a relentless
+                commitment to doing things right. Based in Houston, TX, we&apos;ve grown into one of the
                 region&apos;s most trusted exterior contractors — but we&apos;ve never lost
                 the personal touch that got us here.
               </p>
