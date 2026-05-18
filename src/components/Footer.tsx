@@ -213,7 +213,7 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2 text-gray-400">
             <Shield className="w-4 h-4 text-[#7c3aed]" />
-            <span>Licensed &amp; Insured</span>
+            <span>Fully Insured</span>
           </div>
         </div>
       </div>

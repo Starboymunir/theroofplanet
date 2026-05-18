@@ -62,7 +62,6 @@ const heroSlides = [
   },
 ];
 
-const rotatingWords = ['Excellence', 'Durability', 'Protection', 'Trust'];
 
 const statsData = [
   { label: 'Years Experience', value: 15, suffix: '+', icon: Clock },
@@ -103,7 +102,7 @@ const servicesData = [
 ];
 
 const features = [
-  { title: 'Licensed & Insured', desc: 'Full coverage for your peace of mind' },
+  { title: 'Fully Insured', desc: 'Full coverage for your peace of mind' },
   { title: 'Premium Materials', desc: 'Only top-tier products from trusted brands' },
   { title: '25-Year Warranty', desc: 'Industry-leading warranty coverage' },
   { title: 'Free Inspections', desc: 'No-obligation roof assessments' },
@@ -242,7 +241,6 @@ export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [slideProgress, setSlideProgress] = useState(0);
   const SLIDE_DURATION = 6000;
-  const [wordIndex, setWordIndex] = useState(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const nextSlide = useCallback(() => {
@@ -265,12 +263,6 @@ export default function HomePage() {
     }, tick);
     return () => clearInterval(id);
   }, [nextSlide, SLIDE_DURATION]);
-
-  /* rotating words */
-  useEffect(() => {
-    const id = setInterval(() => setWordIndex((p) => (p + 1) % rotatingWords.length), 3000);
-    return () => clearInterval(id);
-  }, []);
 
   /* testimonial auto-play */
   useEffect(() => {
@@ -355,20 +347,16 @@ export default function HomePage() {
                 </motion.h1>
               </AnimatePresence>
 
-              {/* Rotating accent word */}
+              {/* Accent tagline */}
               <div className="h-10 mb-6 overflow-hidden">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={wordIndex}
-                    initial={{ y: 40, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    exit={{ y: -40, opacity: 0 }}
-                    transition={{ duration: 0.5 }}
-                    className="text-lg sm:text-xl text-[#a78bfa]/80 font-medium tracking-widest uppercase"
-                  >
-                    Delivering {rotatingWords[wordIndex]} Since 2009
-                  </motion.div>
-                </AnimatePresence>
+                <motion.div
+                  initial={{ y: 40, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-lg sm:text-xl text-[#a78bfa]/80 font-medium tracking-widest uppercase"
+                >
+                  The owners have been delivering trust since 2009
+                </motion.div>
               </div>
 
               {/* Description */}

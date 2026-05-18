@@ -401,7 +401,7 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-xl font-bold mb-3">Why Choose Us?</h3>
                     <ul className="space-y-3">
-                      {['Licensed & Insured', '15+ Years Experience', 'Free Inspections', '5-Star Google Rating', '24/7 Emergency Service'].map((item) => (
+                      {['Fully Insured', '15+ Years Experience', 'Free Inspections', '5-Star Google Rating', '24/7 Emergency Service'].map((item) => (
                         <li key={item} className="flex items-center gap-3 text-sm text-gray-300">
                           <CheckCircle className="w-4 h-4 text-roof-amber flex-shrink-0" /> {item}
                         </li>

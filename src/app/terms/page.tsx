@@ -15,7 +15,7 @@ const sections = [
   },
   {
     title: 'Services',
-    content: 'RoofPlanet provides roofing, siding, window, gutter, and related exterior services in the Greater Houston, TX area. All work is performed by licensed and insured professionals. Specific service terms, warranties, and pricing are detailed in individual project agreements.',
+    content: 'RoofPlanet provides roofing, siding, window, gutter, and related exterior services in the Greater Houston, TX area. All work is performed by insured professionals. Specific service terms, warranties, and pricing are detailed in individual project agreements.',
   },
   {
     title: 'Estimates & Pricing',
