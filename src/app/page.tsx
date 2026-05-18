@@ -311,7 +311,7 @@ export default function HomePage() {
 
         {/* Hero content */}
         <div className="relative z-10 h-full flex items-center">
-          <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto w-full">
+          <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
             <div className="max-w-3xl">
               {/* Badge */}
               <AnimatePresence mode="wait">
@@ -348,12 +348,12 @@ export default function HomePage() {
               </AnimatePresence>
 
               {/* Accent tagline */}
-              <div className="h-10 mb-6 overflow-hidden">
+              <div className="mb-6">
                 <motion.div
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="text-lg sm:text-xl text-[#a78bfa]/80 font-medium tracking-widest uppercase"
+                  className="text-sm sm:text-lg text-[#a78bfa]/80 font-medium tracking-wide sm:tracking-widest uppercase leading-snug"
                 >
                   The owners have been delivering trust since 2009
                 </motion.div>

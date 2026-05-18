@@ -139,19 +139,19 @@ export default function Navbar() {
           </div>
 
           {/* ── Mobile / Tablet: Logo left, hamburger right ── */}
-          <div className="flex lg:hidden justify-between items-center h-[100px]">
-            <Link href="/" className="group flex items-center" onClick={() => setIsOpen(false)}>
+          <div className="flex lg:hidden justify-between items-center h-[72px]">
+            <Link href="/" className="group flex items-center shrink-0" onClick={() => setIsOpen(false)}>
               <Image
                 src="/roofplanet-logo-5.png"
                 alt="RoofPlanet"
                 width={400}
                 height={150}
-                className="h-[120px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                className="h-12 sm:h-14 w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 shrink-0">
               <Link
                 href="/estimate"
                 className="inline-flex items-center gap-1.5 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] text-white font-bold text-xs py-2 px-4 rounded-full shadow-lg shadow-[#7c3aed]/25"
