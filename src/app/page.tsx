@@ -283,7 +283,7 @@ export default function HomePage() {
       {/* ════════════════════════════════════════
           HERO CAROUSEL
           ════════════════════════════════════════ */}
-      <section className="relative h-screen min-h-[700px] overflow-hidden pt-32 lg:pt-44">
+      <section className="relative min-h-[100svh] overflow-hidden">
         {/* Background slides */}
         <AnimatePresence mode="wait">
           <motion.div
@@ -310,7 +310,7 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/20" />
 
         {/* Hero content */}
-        <div className="relative z-10 h-full flex items-center pt-28 pb-24 lg:pt-0 lg:pb-0">
+        <div className="relative z-10 flex min-h-[100svh] items-center pt-36 pb-16 sm:pt-40 lg:pt-44 lg:pb-36">
           <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
             <div className="max-w-3xl">
               {/* Badge */}
@@ -338,7 +338,7 @@ export default function HomePage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -40 }}
                   transition={{ duration: 0.8, delay: 0.1 }}
-                  className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold leading-[0.95] mb-6 text-white"
+                  className="text-[2.6rem] sm:text-5xl lg:text-6xl xl:text-[4.25rem] font-extrabold leading-[1.02] tracking-tight mb-5 text-white"
                 >
                   {heroSlides[currentSlide].title}{' '}
                   <span className="bg-gradient-to-r from-[#7c3aed] via-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
@@ -353,7 +353,7 @@ export default function HomePage() {
                   initial={{ y: 40, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="text-sm sm:text-lg text-[#a78bfa]/80 font-medium tracking-wide sm:tracking-widest uppercase leading-snug"
+                  className="text-[11px] sm:text-sm text-[#a78bfa]/85 font-semibold tracking-[0.08em] sm:tracking-[0.2em] uppercase leading-relaxed max-w-md sm:max-w-none"
                 >
                   The owners have been delivering trust since 2009
                 </motion.div>
@@ -367,7 +367,7 @@ export default function HomePage() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.6, delay: 0.3 }}
-                  className="text-lg sm:text-xl text-white/70 max-w-xl mb-6 leading-relaxed"
+                  className="text-base sm:text-lg text-white/75 max-w-xl mb-8 leading-relaxed"
                 >
                   {heroSlides[currentSlide].description}
                 </motion.p>
@@ -378,18 +378,18 @@ export default function HomePage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="flex flex-col sm:flex-row gap-5"
+                className="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4"
               >
                 <Link
                   href="/estimate"
-                  className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-extrabold px-8 sm:px-12 py-5 sm:py-6 rounded-full text-lg sm:text-xl md:text-2xl shadow-2xl shadow-[#7c3aed]/40 hover:shadow-[#7c3aed]/60 transition-all duration-300 hover:scale-[1.05] active:scale-[0.98] animate-pulse-subtle"
+                  className="group inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-extrabold px-7 sm:px-9 py-4 rounded-full text-base sm:text-lg tracking-wide whitespace-nowrap shadow-2xl shadow-[#7c3aed]/40 hover:shadow-[#7c3aed]/60 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98]"
                 >
                   GET FREE INSTANT ESTIMATE
-                  <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
                 <a
                   href="tel:+18323706314"
-                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white hover:text-[#a78bfa] font-bold px-6 sm:px-8 py-4 rounded-full text-base sm:text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
+                  className="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white hover:text-[#a78bfa] font-bold px-6 sm:px-8 py-[14px] rounded-full text-base sm:text-lg whitespace-nowrap backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
                 >
                   <Phone className="w-5 h-5" />
                   (832) 370-6314
@@ -400,7 +400,7 @@ export default function HomePage() {
         </div>
 
         {/* Slide navigation */}
-        <div className="hidden lg:block absolute bottom-12 left-0 right-0 z-20">
+        <div className="hidden lg:block absolute bottom-8 left-0 right-0 z-20">
           <div className="w-[92%] xl:w-[88%] 2xl:w-[82%] mx-auto">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-3">
@@ -430,7 +430,7 @@ export default function HomePage() {
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 hidden sm:block"
+          className="absolute bottom-8 right-8 z-20 hidden xl:block"
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
@@ -833,61 +833,6 @@ export default function HomePage() {
               </motion.span>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ════════════════════════════════════════
-          FINAL CTA
-          ════════════════════════════════════════ */}
-      <section className="relative py-24 sm:py-32 overflow-hidden">
-        <Image
-          src="https://images.pexels.com/photos/280229/pexels-photo-280229.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Beautiful home with new roof"
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-        <div className="absolute inset-0 bg-[#0a1628]/85 backdrop-blur-sm" />
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="flex items-center justify-center gap-1.5 mb-6">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-6 h-6 fill-[#a78bfa] text-[#a78bfa]" />
-              ))}
-            </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-              Ready to Start Your{' '}
-              <span className="bg-gradient-to-r from-[#7c3aed] via-[#a78bfa] to-[#7c3aed] bg-clip-text text-transparent">
-                Roofing Project?
-              </span>
-            </h2>
-            <p className="text-white/70 text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
-              Get a free, no-obligation estimate today. Join 2,500+ happy homeowners who trust
-              RoofPlanet.
-            </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4">
-              <Link
-                href="/estimate"
-                className="group inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg shadow-2xl shadow-[#7c3aed]/30 hover:shadow-[#7c3aed]/50 transition-all duration-300 hover:scale-[1.03]"
-              >
-                Get Free Estimate
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <a
-                href="tel:+18323706314"
-                className="inline-flex items-center gap-2 border-2 border-white/20 hover:border-[#7c3aed]/60 text-white font-bold px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg backdrop-blur-sm hover:bg-white/5 transition-all duration-300"
-              >
-                <Phone className="w-5 h-5" />
-                Call Now
-              </a>
-            </div>
-          </motion.div>
         </div>
       </section>
     </main>

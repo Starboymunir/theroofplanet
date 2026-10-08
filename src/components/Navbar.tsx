@@ -103,34 +103,34 @@ export default function Navbar() {
                 alt="RoofPlanet"
                 width={800}
                 height={160}
-                className="h-[80px] xl:h-[90px] w-auto object-contain group-hover:opacity-90 transition-opacity"
+                className="h-[56px] xl:h-[64px] w-auto object-contain group-hover:opacity-90 transition-opacity"
                 priority
               />
             </Link>
 
             {/* Nav + CTA — right */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-1 xl:gap-2">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="relative px-4 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors group"
+                  className="relative px-2.5 xl:px-4 py-2 text-sm font-medium whitespace-nowrap text-white/80 hover:text-white transition-colors group"
                 >
                   {link.label}
                   <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-[2px] bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] group-hover:w-3/4 transition-all duration-300 ease-out rounded-full" />
                 </Link>
               ))}
-              <span className="w-px h-5 bg-white/20 mx-2" />
+              <span className="hidden xl:block w-px h-5 bg-white/20 mx-2" />
               <a
                 href="tel:+18323706314"
-                className="flex items-center gap-1.5 text-[#a78bfa] hover:text-white text-sm font-semibold transition-colors"
+                className="hidden xl:flex items-center gap-1.5 whitespace-nowrap text-[#a78bfa] hover:text-white text-sm font-semibold transition-colors"
               >
                 <Phone className="w-4 h-4" />
                 (832) 370-6314
               </a>
               <Link
                 href="/estimate"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold text-sm py-2.5 px-6 rounded-full shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] ml-2"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-[#7c3aed] to-[#a78bfa] hover:from-[#a78bfa] hover:to-[#7c3aed] text-white font-bold text-sm whitespace-nowrap py-2.5 px-5 xl:px-6 rounded-full shadow-lg shadow-[#7c3aed]/25 hover:shadow-[#7c3aed]/40 transition-all duration-300 hover:scale-[1.03] active:scale-[0.98] ml-2"
               >
                 Get Free Quote
                 <ArrowRight className="w-4 h-4" />
